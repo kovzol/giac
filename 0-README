@@ -14,6 +14,6 @@ NEWS
 2021-03-25: Giac compiles on Emscripten 2.0.15. Use the scripts 1-get-emscripten and 2-compile-giac-wasm.
 Old versions of GMP and MPFR (in src/giac.js/prebuilt/*) are moved to src/giac.js/prebuilt/old/,
 new versions are 6.2.0 and 4.1.0, respectively. A .gitignore file is also added.
-The binary will be built in build/binaries/giacggb.wasm/.
+The binary will be built in build/binaries/giacggb.wasm/. GitHub automatically tests this build.
 Disclaimer: This initial version is considered 'as is', no cleanup was made.
 

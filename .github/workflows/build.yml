@@ -1,0 +1,17 @@
+name: CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: prerequisites
+      run: sudo apt update && sudo apt install default-jdk git
+    - name: get-emscripten
+      run: ./1-get-emscripten
+    - name: compile-giac-wasm
+      run: ./2-compile-giac-wasm
