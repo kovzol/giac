@@ -1,0 +1,18 @@
+Hi,
+this is an experimental version of Giac.
+It aims to have a simple, consistent build system to compile the newest version of Giac for modern architectures.
+
+For a stable version see GeoGebra's repository https://dev.geogebra.org/trac/browser/trunk/geogebra/giac.
+Giac's main homepage is at https://www-fourier.ujf-grenoble.fr/~parisse/giac.html
+and mostly developed by Bernard Parisse.
+
+This repository is maintained by Zoltán Kovács.
+
+NEWS
+----
+
+2021-03-25: Giac compiles on Emscripten 2.0.15. Use the scripts 1-get-emscripten and 2-compile-giac-wasm.
+Old versions of GMP and MPFR (in src/giac.js/prebuilt/*) are moved to src/giac.js/prebuilt/old/,
+new versions are 6.2.0 and 4.1.0, respectively.
+Disclaimer: This initial version is considered 'as is', no cleanup was made.
+

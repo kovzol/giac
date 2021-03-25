@@ -1,0 +1,16 @@
+#!/bin/bash
+test -x emsdk || git clone https://github.com/emscripten-core/emsdk.git
+pushd emsdk
+git pull
+popd
+./gradlew installEmsdk
+
+pushd emsdk
+ln -s . emsdk-portable
+
+mkdir emscripten
+pushd emscripten
+ln -s ../upstream/emscripten latest
+popd
+
+popd
